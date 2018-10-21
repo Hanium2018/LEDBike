@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>IOT LED</title>
+
+		<link rel="stylesheet" href="./static/css/site.css">
+
+		<script src="./static/js/jquery-1.8.3.min.js"></script>
+		<script src="./static/js/site.js"></script>
+	</head>
+	<body>
+	  	<div id="header">
+	  		<h1 id="logo"><a href="#">led 자전거</a></h1>
+	  	</div>
+
+	  	<div id="login">
+	  		<div class="wrap">
+		  		<h2>
+		  			아래정보를 입력해주세요
+		  			<span>Please enter information</span>
+		  		</h2>
+
+				<div class="form_01">
+			  		<form name="" action="/loginone" method="post">
+						<!-- 닉네임 -->
+						<dl>
+							<dt><label for="userName">닉네임</label></dt>
+							<dd>
+								<input type="text" name="userName" id="userName" placeholder="userName" required>
+							</dd>
+						</dl>
+						<!-- 닉네임 -->
+
+						<!-- 성별 -->
+						<dl>
+							<dt>
+								<label for="male">성별</label>
+							</dt>
+							<dd>
+								<input type="radio" name="gender" id="male" value="1" required>
+								<label for="male"><span></span>남자</label>
+								<input type="radio" name="gender" id="female" value="2" required>
+								<label for="female"><span></span>여자</label>
+							</dd>
+						</dl>
+						<!-- 성별 -->
+
+						<!-- 나이 -->
+						<dl>
+							<dt><label for="age0">나이</label></dt>
+							<dd class="age">
+								<input type="radio" name="age" id="age0" value="0" required>
+								<label for="age0"><span></span>9세 이하</label>
+								<input type="radio" name="age" id="age1" value="1" required>
+								<label for="age1"><span></span>10 ~ 19세</label>
+								<input type="radio" name="age" id="age2" value="2" required>
+								<label for="age2"><span></span>20 ~ 35세</label>
+								<input type="radio" name="age" id="age3" value="3" required>
+								<label for="age3"><span></span>36 ~ 49세</label>
+								<input type="radio" name="age" id="age4" value="4" required>
+								<label for="age4"><span></span>50세 이상</label>
+							</dd>
+						</dl> <!-- 나이 -->
+
+
+						<!-- 소속 -->
+						<dl>
+							<dt><label for="myteam">소속</label></dt>
+							<dd>
+								<input type="text" name="myteam" id="myteam" placeholder="myteam" required>
+							</dd>
+						</dl> <!-- 소속 -->
+
+
+						<!-- 상대 닉네임 -->
+						<dl>
+							<dt><label for="competitor">상대닉네임</label></dt>
+							<dd>
+								<input type="text" name="competitor" id="competitor" placeholder="competitor">
+							</dd>
+						</dl> <!-- 상대 닉네임 -->
+
+						<div class="btn">
+							<div>
+								<input type="submit" name="play" value="PLAY">
+								<input type="submit" name="play" value="BACK">
+
+							</div>
+						</div>
+			  		</form>
+		  		</div>
+	  		</div>
+	  	</div>
+	</body>
+</html>
